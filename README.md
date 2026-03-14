@@ -2,7 +2,7 @@
 
 Bonjour Mr Florent , nous sommes les groupes Nexus du projet Javascript de L3 ISSTM,
 Nous sommes ravis de collaborer avec vous en tenant compte de votre projet,
-Et nous sommes en toutes votre disposition durant cette projet.
+et nous sommes en toutes votre disposition durant cette projet.
 
 
 Voici les membres de notre groupe :

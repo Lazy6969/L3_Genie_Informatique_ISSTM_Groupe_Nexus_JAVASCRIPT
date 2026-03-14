@@ -12,4 +12,6 @@ Voici les membres de notre groupe :
 - RAZAFINDRABARY Heather Doleen Jameelah (12ISST23-1303-FGCI/Ginfo)
 - RANDRIANJATOVO Lucardo (12ISST23-1375-FGCI/Ginfo)
 - RAHARILIVA Marie Julia (12ISST23-1286-FGCI/Ginfo)
+- 
+Nous vous remercions d’avance pour votre collaboration. Ce dépôt a été créé afin que vous puissiez y déposer notre thème de projet. Nous restons dans l’attente de votre proposition.
 

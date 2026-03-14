@@ -5,7 +5,7 @@ Nous sommes ravis de collaborer avec vous en tenant compte de votre projet,
 Et nous sommes en toutes votre disposition durant cette projet.
 
 
-Listes des étudiants :
+Voici les membres de notre groupe :
 
 - RAMANANA Mirindra Michel (12ISST23-1331-FGCI/Ginfo)
 - RANDRIATSIFERANA Jean Louis (12ISST23-1320-FGCI/Ginfo)

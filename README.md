@@ -1,4 +1,4 @@
-# L3-G-nie-Informatique--ISSTM-Groupe-Nexus-JAVASCRIPT
+# L3-Genie-Informatique--ISSTM-Groupe-TeamNexus-JAVASCRIPT
 
 RAMANANA Mirindra Michel (12ISST23-1331-FGCI/Ginfo)
 RANDRIATSIFERANA Jean Louis (12ISST23-1320-FGCI/Ginfo)

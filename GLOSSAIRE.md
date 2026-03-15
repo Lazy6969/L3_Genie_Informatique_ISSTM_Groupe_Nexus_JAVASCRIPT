@@ -10,13 +10,14 @@ Ce document est votre guide de survie pour comprendre les termes techniques util
 | :--- | :--- |
 | **Framework** | Un ensemble d'outils et de règles de structure (ex: React, Vue) qui facilite le développement d'applications. |
 | **Composant** | Un morceau d'interface réutilisable (ex: un bouton, une barre de recherche). C'est comme une brique de LEGO. |
-| **State (État)** | La mémoire du composant. Si l'état change, le framework redessine l'interface automatiquement (Réactivité). |
+| **State (État)** | La mémoire du composant. Si l'état change (ex: la liste des films se met à jour), le framework redessine l'interface automatiquement (Réactivité). |
 | **Props** | (Propriétés) Données envoyées d'un composant parent à un enfant (ex: envoyer le titre d'un film à une `MovieCard`). |
 | **Hook (React) / Ref (Vue)** | Fonctions spéciales permettant de "brancher" de la logique (comme l'état) dans vos composants. |
 | **API** | (Interface de Programmation) Un service qui fournit des données (ex: TMDB nous donne la liste des films au format JSON). |
 | **Endpoint** | L'adresse URL précise d'une API (ex: `https://api.themoviedb.org/3/trending/movie/week`). |
 | **Fetch** | La fonction JavaScript standard pour aller chercher des données sur Internet. |
 | **Async / Await** | Mots-clés en JavaScript pour gérer des tâches qui prennent du temps (comme télécharger des données) sans bloquer l'application. |
+| **Asynchrone** | Une action qui prend du temps (comme un appel API). |
 | **CORS** | Sécurité du navigateur qui autorise (ou non) votre application à parler à un serveur situé sur une autre adresse. |
 | **LocalStorage** | Petite base de données intégrée à votre navigateur pour stocker des infos même après avoir fermé l'onglet. |
 | **Mock** | Un "faux" serveur ou une "fausse" donnée utilisée pour tester sans dépendre d'une connexion internet ou d'un coût API. |

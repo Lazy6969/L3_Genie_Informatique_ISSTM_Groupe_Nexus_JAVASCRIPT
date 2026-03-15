@@ -18,7 +18,7 @@ Ce dépôt contient le projet pratique pour le cours de **Frameworks JavaScript*
 ## Objectif final
 Une application web permettant de rechercher des films, de voir leurs détails et de gérer une liste de favoris persistante.
 
-## Membres de cette groupe :
+## Membres de groupe :
 1. RAMANANA Mirindra Michel (12ISST23-1331-FGCI/Ginfo)
 2. RANDRIATSIFERANA Jean Louis (12ISST23-1320-FGCI/Ginfo)
 3. RAZAFINDRABARY Heather Doleen Jameelah (12ISST23-1303-FGCI/Ginfo)

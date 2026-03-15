@@ -69,7 +69,7 @@ Permettez de cliquer sur un film pour voir ses détails (synopsis, acteurs).
 
 ---
 
-## ✅ Critères de réussite
+## Critères de réussite
 - L'application est fluide et réactive.
 - Les images des films s'affichent correctement (Base URL TMDB : `https://image.tmdb.org/t/p/w500/`).
 - La recherche fonctionne sans erreurs.

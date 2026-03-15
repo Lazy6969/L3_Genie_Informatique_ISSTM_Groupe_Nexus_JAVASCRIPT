@@ -1,10 +1,10 @@
-# 📖 Glossaire & Concepts : React vs Vue.js
+# Glossaire & Concepts : React vs Vue.js
 
 Ce document est votre guide de survie pour comprendre les termes techniques utilisés dans ce projet et dans le monde des frameworks JavaScript.
 
 ---
 
-## 🌍 Concepts Généraux (Valables partout)
+## Concepts Généraux (Valables partout)
 
 | Mot-clé | Définition |
 | :--- | :--- |
@@ -25,7 +25,7 @@ Ce document est votre guide de survie pour comprendre les termes techniques util
 
 ---
 
-## ⚛️ Dictionnaire React
+## Dictionnaire React
 
 | Mot-clé | Rôle |
 | :--- | :--- |
@@ -37,7 +37,7 @@ Ce document est votre guide de survie pour comprendre les termes techniques util
 
 ---
 
-## 🟢 Dictionnaire Vue.js
+## Dictionnaire Vue.js
 
 | Mot-clé | Rôle |
 | :--- | :--- |
@@ -51,9 +51,9 @@ Ce document est votre guide de survie pour comprendre les termes techniques util
 
 ---
 
-## 🔄 Tableau de Correspondance (Traducteur)
+## Tableau de Correspondance (Traducteur)
 
-| Action | En React ⚛️ | En Vue.js 🟢 |
+| Action | En React | En Vue.js |
 | :--- | :--- | :--- |
 | **Afficher une variable** | `{ title }` | `{{ title }}` |
 | **Boucler sur une liste** | `movies.map(m => ...)` | `v-for="m in movies"` |
@@ -64,5 +64,5 @@ Ce document est votre guide de survie pour comprendre les termes techniques util
 
 ---
 
-## 💡 Astuce pour l'exercice
+## Astuce pour l'exercice
 N'essayez pas de tout apprendre par cœur. Utilisez ce glossaire comme une aide-mémoire pendant que vous codez. Si vous bloquez sur "comment faire une boucle", regardez la ligne **v-for** ou **.map()** !

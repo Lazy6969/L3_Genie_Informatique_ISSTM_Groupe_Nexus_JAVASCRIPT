@@ -1,155 +1,48 @@
-🗓️ JOUR 1 : Fondations + Fonctionnalités principales
-🗓️ JOUR 2 : Fonctionnalités avancées + Intégration + Tests
+================================================================================
+PLAN DE TRAVAIL : CINEMASTER (REACT ONLY) - FINALISATION & POLISSAGE
+================================================================================
 
+OBJECTIF : Passer d'un prototype fonctionnel à une application finie et fluide.
+FRAMEWORK : React (Vite)
+ÉQUIPE : 5 Développeurs
 
+--------------------------------------------------------------------------------
+JOUR 1 : OPTIMISATIONS ET FONCTIONNALITÉS AVANCÉES
+--------------------------------------------------------------------------------
 
+Matin (09h - 13h) :
+- DEV 1 (Lead/Routing) : Mise en place des transitions de pages (ex: Framer Motion) et sécurisation des routes. Nettoyage de App.jsx.
+- DEV 2 (UI/UX) : Remplacement des spinners par des 'Skeleton Loaders' dans MovieGrid pour un rendu professionnel.
+- DEV 3 (API/Data) : Extension du service tmdb.js pour récupérer les acteurs et les trailers (vidéos) pour la page détail.
+- DEV 4 (State/Favorites) : Création de la page "Mes Favoris" complète (affichage de la liste depuis le Context/Zustand).
+- DEV 5 (UX/Logic) : Implémentation de la pagination (bouton "Charger plus") ou de l'Infinite Scroll sur la grille principale.
 
-🗓️ JOUR 1 - Matin (9h-13h)
-🔧 Dev 1 - Architecture & Setup
-# Tâches :
-✅ Initialiser le projet avec Vite (React/Vue)
-✅ Installer les dépendances : react-router-dom / vue-router, axios (optionnel)
-✅ Créer la structure de dossiers :
-   src/
-   ├── components/
-   ├── pages/
-   ├── services/
-   ├── utils/
-   └── assets/
-✅ Configurer le fichier d'environnement (.env) pour l'API TMDB
-✅ Créer le composant `App.jsx/vue` avec le routing de base
+Après-midi (14h - 18h) :
+- DEV 1 (Lead) : Audit des performances (React.memo sur les MovieCard) et vérification de la gestion des variables d'environnement (.env).
+- DEV 2 (UI/UX) : Polissage du responsive (Mobile First) et ajout d'un mode sombre (Dark Mode) si possible.
+- DEV 3 (API/Data) : Gestion des cas d'erreur API (ErrorBoundary) et mise en cache simple des résultats de recherche (sessionStorage).
+- DEV 4 (State/Favorites) : Ajout d'un badge compteur de favoris dans le Header et animation du bouton ❤️ au clic.
+- DEV 5 (UX/Logic) : Gestion des "états vides" (ex: "Aucun film trouvé" ou "Vous n'avez pas encore de favoris").
 
-🎨 Dev 2 - Composants UI de base
-# Tâches :
-✅ Créer `Header.jsx/vue` : logo, titre, navigation
-✅ Créer `SearchBar.jsx/vue` : input + bouton recherche (sans logique)
-✅ Créer `MovieCard.jsx/vue` : structure HTML/CSS (image, titre, note)
-✅ Créer `MovieGrid.jsx/vue` : grille responsive pour afficher les cartes
-✅ Appliquer un style CSS de base (Flexbox/Grid)
+--------------------------------------------------------------------------------
+JOUR 2 : QUALITÉ, TESTS ET PRÉPARATION DÉMO
+--------------------------------------------------------------------------------
 
-🔌 Dev 3 - Service API TMDB
-# Tâches :
-✅ Créer `src/services/tmdb.js` avec les fonctions :
-   - getTrendingMovies(page)
-   - searchMovies(query, page)
-   - getMovieDetails(id)
-✅ Gérer les erreurs API et les timeouts
-✅ Tester les endpoints avec Postman ou fetch simple
-✅ Documenter les formats de réponse attendus
+Matin (09h - 13h) :
+- DEV 1 (Lead) : Fusion (Merge) finale des branches, résolution des conflits et optimisation de la build de production (npm run build).
+- DEV 2 (UI/UX) : Micro-interactions (hover effects, scale sur les cartes, feedbacks visuels au clic).
+- DEV 3 (API/Data) : Finalisation de la page détail (affichage des acteurs et intégration du trailer YouTube).
+- DEV 4 (State/Favorites) : Ajout d'une option pour supprimer tous les favoris d'un coup et vérification de la persistance LocalStorage.
+- DEV 5 (QA/Docs) : Rédaction du README.md final, création du .env.example et tests croisés sur différents navigateurs.
 
-💾 Dev 4 - Gestion d'état & Favoris (base)
-# Tâches :
-✅ Mettre en place le store d'état :
-   - React : Context API ou Zustand
-   - Vue : Pinia ou provide/inject
-✅ Créer les actions : addFavorite, removeFavorite, isFavorite
-✅ Implémenter la lecture/écriture dans localStorage
-✅ Tester la persistance manuellement
+Après-midi (14h - 18h) :
+- TOUTE L'ÉQUIPE : Bug Bash (test intensif pour trouver les derniers bugs).
+- TOUTE L'ÉQUIPE : Préparation du support de présentation et répétition de la démo live.
+- LIVRAISON : Déploiement (Vercel/Netlify) et remise du lien.
 
-🔍 Dev 5 - Recherche & Expérience utilisateur
-# Tâches :
-✅ Connecter `SearchBar` à un état local (useState/ref)
-✅ Implémenter le debounce (300ms) pour éviter trop d'appels API
-✅ Gérer les états de chargement (loading spinner)
-✅ Afficher les messages d'erreur utilisateur-friendly
-✅ Préparer les placeholders pour les états vides
-
-
-
-
-
-
-
-
-
-🗓️ JOUR 1 - Après-midi (14h-18h)
-🔧 Dev 1 - Routing & Page Détails
-# Tâches :
-✅ Configurer les routes :
-   - `/` → HomePage (films tendances)
-   - `/search/:query` → ResultsPage (optionnel)
-   - `/movie/:id` → MovieDetailPage
-✅ Créer `MovieDetailPage.jsx/vue` (structure vide)
-✅ Mettre en place la navigation depuis MovieCard (link vers détails)
-✅ Gérer le bouton "Retour" dans la page détail
-
-🎨 Dev 2 - Finalisation UI & Responsive
-# Tâches :
-✅ Styliser `MovieCard` : hover effects, badges note, bouton favoris ❤️
-✅ Améliorer `MovieGrid` : skeleton loaders pendant le chargement
-✅ Rendre l'application responsive (mobile-first)
-✅ Ajouter des animations CSS légères (transitions)
-✅ Uniformiser la charte graphique (couleurs, typographie)
-
-🔌 Dev 3 - Intégration API dans les composants
-# Tâches :
-✅ Dans HomePage : fetch des films tendances au montage (useEffect/onMounted)
-✅ Connecter `SearchBar` à `searchMovies()` et mettre à jour MovieGrid
-✅ Gérer la pagination (boutons "Charger plus" ou infinite scroll)
-✅ Formater les données TMDB pour les composants (poster path → URL complète)
-✅ Ajouter un gestionnaire de retry en cas d'échec API
-
-💾 Dev 4 - Intégration Favoris dans l'UI
-# Tâches :
-✅ Ajouter le bouton ❤️ dans `MovieCard` (lié au state favorites)
-✅ Synchroniser le bouton avec le store : toggle add/remove
-✅ Créer une page ou modal "Mes Favoris" accessible depuis le Header
-✅ Afficher un indicateur visuel si un film est déjà en favoris
-✅ Vérifier que la persistance localStorage fonctionne après refresh
-
-🔍 Dev 5 - Tests manuels & Améliorations UX
-# Tâches :
-✅ Tester tous les scénarios : recherche vide, erreur API, réseau lent
-✅ Ajouter des messages toast/notifications pour les actions favoris
-✅ Améliorer l'accessibilité (aria-labels, contrastes, navigation clavier)
-✅ Rédiger un mini-guide d'utilisation dans l'UI (tooltips)
-✅ Préparer la checklist de tests pour l'intégration J2
-
-
-
-
-
-
-🗓️ JOUR 2 - Matin (9h-13h) : Intégration & Finalisation
-🔧 Dev 1 - Coordination & Merge
-# Tâches :
-✅ Fusionner les branches / intégrer les composants
-✅ Résoudre les conflits de code et de styles
-✅ Vérifier que le routing fonctionne avec les données réelles
-✅ Optimiser le code : extraire les fonctions utilitaires, nettoyer les imports
-✅ Préparer la build de production (`npm run build`)
-
-
-🎨 Dev 2 - Polish UI & Animations
-# Tâches :
-✅ Ajouter des transitions de page (fade-in, slide)
-✅ Améliorer l'expérience mobile : menu hamburger, touch targets
-✅ Uniformiser les états de chargement sur toutes les pages
-✅ Vérifier le rendu sur différents viewports (devtools)
-✅ Ajouter un favicon et un titre dynamique à la page
-
-
-🔌 Dev 3 - Optimisation API & Données
-# Tâches :
-✅ Implémenter un cache simple en mémoire pour éviter les requêtes redondantes
-✅ Gérer le formatage des dates, genres, et notes dans `MovieDetail`
-✅ Ajouter le lazy-loading des images (`loading="lazy"`)
-✅ Vérifier que les posters s'affichent avec l'URL TMDB correcte
-✅ Documenter les limites de l'API TMDB (rate limiting)
-
-
-💾 Dev 4 - Gestion avancée des favoris
-# Tâches :
-✅ Ajouter la possibilité de supprimer un favori depuis la page "Mes Favoris"
-✅ Synchroniser l'état favoris entre les pages (Context/Pinia)
-✅ Gérer le cas où localStorage est plein ou désactivé (fallback)
-✅ Ajouter un compteur de favoris dans le Header
-✅ Exporter/importer les favoris en JSON (bonus)
-
-🔍 Dev 5 - Tests, Docs & Préparation démo
-# Tâches :
-✅ Rédiger le README.md : installation, configuration API, scripts
-✅ Créer un fichier `.env.example` avec les variables nécessaires
-✅ Tester l'application en mode production (`npm run preview`)
-✅ Préparer un scénario de démo (films tendances → recherche → favoris → détails)
-✅ Lister les bugs connus et les améliorations futures
+--------------------------------------------------------------------------------
+POINTS TECHNIQUES CLÉS POUR REACT :
+1. Utiliser 'import.meta.env.VITE_TMDB_KEY' pour la clé API.
+2. Passer par un Context pour éviter le 'Prop Drilling' des favoris.
+3. Utiliser 'loading="lazy"' sur les images des posters.
+================================================================================

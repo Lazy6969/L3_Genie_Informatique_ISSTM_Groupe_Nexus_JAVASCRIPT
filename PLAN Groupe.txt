@@ -1,48 +1,80 @@
 ================================================================================
-PLAN DE TRAVAIL : CINEMASTER (REACT ONLY) - FINALISATION & POLISSAGE
+PLAN DE TRAVAIL : CINEMASTER (REACT ONLY) - PHASE DE FINALISATION
 ================================================================================
 
-OBJECTIF : Passer d'un prototype fonctionnel à une application finie et fluide.
-FRAMEWORK : React (Vite)
-ÉQUIPE : 5 Développeurs
+OBJECTIF : Finalisation des fonctionnalités avancées, optimisation et polissage.
+DURÉE : 2 Jours (Après validation des bases du Jour 1).
+
+--------------------------------------------------------------------------------
+REPARTITION PAR DEVELOPPEUR & FICHIERS CIBLES
+--------------------------------------------------------------------------------
+
+DEV 1 : ARCHITECTE & ROUTING
+Tâches : Transitions de pages, sécurisation des routes, page détails.
+Fichiers :
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\App.jsx
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\pages\MovieDetailPage.jsx
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\vite.config.js
+
+DEV 2 : UI/UX DESIGNER
+Tâches : Skeleton loaders, animations CSS, responsive mobile-first.
+Fichiers :
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\index.css
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\components\MovieCard.css
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\components\SkeletonCard.jsx
+
+DEV 3 : API SPECIALIST
+Tâches : Données détaillées (acteurs/trailers), formatage, gestion d'erreurs API.
+Fichiers :
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\services\tmdb.js
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\utils\formatters.js
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\.env
+
+DEV 4 : STATE MANAGER (FAVORIS)
+Tâches : Logique Context API, persistence LocalStorage, page favoris.
+Fichiers :
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\context\MovieContext.jsx
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\pages\FavoritesPage.jsx
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\components\Header.jsx (Badge)
+
+DEV 5 : UX LOGIC & QUALITÉ
+Tâches : Debounce recherche, pagination (Load More), documentation README.
+Fichiers :
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\components\SearchBar.jsx
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\components\MovieGrid.jsx
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\README.md
 
 --------------------------------------------------------------------------------
 JOUR 1 : OPTIMISATIONS ET FONCTIONNALITÉS AVANCÉES
 --------------------------------------------------------------------------------
 
-Matin (09h - 13h) :
-- DEV 1 (Lead/Routing) : Mise en place des transitions de pages (ex: Framer Motion) et sécurisation des routes. Nettoyage de App.jsx.
-- DEV 2 (UI/UX) : Remplacement des spinners par des 'Skeleton Loaders' dans MovieGrid pour un rendu professionnel.
-- DEV 3 (API/Data) : Extension du service tmdb.js pour récupérer les acteurs et les trailers (vidéos) pour la page détail.
-- DEV 4 (State/Favorites) : Création de la page "Mes Favoris" complète (affichage de la liste depuis le Context/Zustand).
-- DEV 5 (UX/Logic) : Implémentation de la pagination (bouton "Charger plus") ou de l'Infinite Scroll sur la grille principale.
+MATIN (09h - 13h) :
+- DEV 1 : Mise en place du routing dynamique pour /movie/:id.
+- DEV 2 : Création du composant SkeletonCard pour simuler le chargement.
+- DEV 3 : Ajout des fonctions fetchMovieCredits() et fetchMovieVideos() dans tmdb.js.
+- DEV 4 : Création du MovieProvider pour centraliser l'état des favoris.
+- DEV 5 : Implémentation de la logique de recherche avec un délai (Debounce).
 
-Après-midi (14h - 18h) :
-- DEV 1 (Lead) : Audit des performances (React.memo sur les MovieCard) et vérification de la gestion des variables d'environnement (.env).
-- DEV 2 (UI/UX) : Polissage du responsive (Mobile First) et ajout d'un mode sombre (Dark Mode) si possible.
-- DEV 3 (API/Data) : Gestion des cas d'erreur API (ErrorBoundary) et mise en cache simple des résultats de recherche (sessionStorage).
-- DEV 4 (State/Favorites) : Ajout d'un badge compteur de favoris dans le Header et animation du bouton ❤️ au clic.
-- DEV 5 (UX/Logic) : Gestion des "états vides" (ex: "Aucun film trouvé" ou "Vous n'avez pas encore de favoris").
-
---------------------------------------------------------------------------------
-JOUR 2 : QUALITÉ, TESTS ET PRÉPARATION DÉMO
---------------------------------------------------------------------------------
-
-Matin (09h - 13h) :
-- DEV 1 (Lead) : Fusion (Merge) finale des branches, résolution des conflits et optimisation de la build de production (npm run build).
-- DEV 2 (UI/UX) : Micro-interactions (hover effects, scale sur les cartes, feedbacks visuels au clic).
-- DEV 3 (API/Data) : Finalisation de la page détail (affichage des acteurs et intégration du trailer YouTube).
-- DEV 4 (State/Favorites) : Ajout d'une option pour supprimer tous les favoris d'un coup et vérification de la persistance LocalStorage.
-- DEV 5 (QA/Docs) : Rédaction du README.md final, création du .env.example et tests croisés sur différents navigateurs.
-
-Après-midi (14h - 18h) :
-- TOUTE L'ÉQUIPE : Bug Bash (test intensif pour trouver les derniers bugs).
-- TOUTE L'ÉQUIPE : Préparation du support de présentation et répétition de la démo live.
-- LIVRAISON : Déploiement (Vercel/Netlify) et remise du lien.
+APRÈS-MIDI (14h - 18h) :
+- DEV 1 : Structure de la page MovieDetailPage (Affichage du trailer et synopsis).
+- DEV 2 : Animation au survol des MovieCard et transitions fluides entre pages.
+- DEV 3 : Création d'un utilitaire pour gérer les images manquantes (fallback).
+- DEV 4 : Intégration du bouton ❤️ dans MovieCard connecté au Context.
+- DEV 5 : Ajout du bouton "Charger plus" en bas de la MovieGrid.
 
 --------------------------------------------------------------------------------
-POINTS TECHNIQUES CLÉS POUR REACT :
-1. Utiliser 'import.meta.env.VITE_TMDB_KEY' pour la clé API.
-2. Passer par un Context pour éviter le 'Prop Drilling' des favoris.
-3. Utiliser 'loading="lazy"' sur les images des posters.
+JOUR 2 : POLISSAGE FINAL ET LIVRAISON
+--------------------------------------------------------------------------------
+
+MATIN (09h - 13h) :
+- DEV 1 : Gestion des Error Boundaries (éviter que l'app crash en cas d'erreur).
+- DEV 2 : Vérification du responsive sur tous les formats d'écran.
+- DEV 3 : Mise en cache sessionStorage des résultats de recherche.
+- DEV 4 : Finalisation de la FavoritesPage (affichage et suppression).
+- DEV 5 : Mise à jour du README avec instructions d'installation et démo.
+
+APRÈS-MIDI (14h - 18h) :
+- TOUTE L'ÉQUIPE : Bug Bash (chasse aux bugs collective).
+- TOUTE L'ÉQUIPE : Nettoyage final du code (suppression des consoles.log).
+- TOUTE L'ÉQUIPE : Préparation de la démo et build finale (npm run build).
 ================================================================================

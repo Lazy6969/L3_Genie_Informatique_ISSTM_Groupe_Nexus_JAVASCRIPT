@@ -10,68 +10,67 @@ REPARTITION PAR DEVELOPPEUR & FICHIERS CIBLES
 --------------------------------------------------------------------------------
 
 DEV 1 : ARCHITECTE & ROUTING
-Tâches : Transitions de pages, sécurisation des routes, page détails.
+Tâches : Configuration Vite, Routing (Step 5), et structure globale.
 Fichiers :
 - c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\App.jsx
-- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\pages\MovieDetailPage.jsx
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\main.jsx
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\pages\MovieDetail.jsx
 - c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\vite.config.js
 
 DEV 2 : UI/UX DESIGNER
-Tâches : Skeleton loaders, animations CSS, responsive mobile-first.
+Tâches : Création des composants visuels (Step 1) et styles CSS.
 Fichiers :
 - c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\index.css
-- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\components\MovieCard.css
-- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\components\SkeletonCard.jsx
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\components\MovieCard.jsx
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\components\Header.jsx
 
 DEV 3 : API SPECIALIST
-Tâches : Données détaillées (acteurs/trailers), formatage, gestion d'erreurs API.
+Tâches : Appels API TMDB (Step 2 & 3) et gestion de la clé API.
 Fichiers :
-- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\services\tmdb.js
-- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\utils\formatters.js
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\services\api.js
 - c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\.env
 
 DEV 4 : STATE MANAGER (FAVORIS)
-Tâches : Logique Context API, persistence LocalStorage, page favoris.
+Tâches : Système de favoris et LocalStorage (Step 4).
 Fichiers :
-- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\context\MovieContext.jsx
-- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\pages\FavoritesPage.jsx
-- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\components\Header.jsx (Badge)
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\hooks\useLocalStorage.js
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\pages\Favorites.jsx
 
 DEV 5 : UX LOGIC & QUALITÉ
-Tâches : Debounce recherche, pagination (Load More), documentation README.
+Tâches : Barre de recherche dynamique et grille de films (Step 1 & 3).
 Fichiers :
 - c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\components\SearchBar.jsx
 - c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\src\components\MovieGrid.jsx
-- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\README.md
+- c:\Users\LAZY\L3_Genie_Informatique_ISSTM_Groupe_Nexus_JAVASCRIPT\starters\react-cineapp\package.json
 
 --------------------------------------------------------------------------------
 JOUR 1 : OPTIMISATIONS ET FONCTIONNALITÉS AVANCÉES
 --------------------------------------------------------------------------------
 
 MATIN (09h - 13h) :
-- DEV 1 : Mise en place du routing dynamique pour /movie/:id.
-- DEV 2 : Création du composant SkeletonCard pour simuler le chargement.
-- DEV 3 : Ajout des fonctions fetchMovieCredits() et fetchMovieVideos() dans tmdb.js.
-- DEV 4 : Création du MovieProvider pour centraliser l'état des favoris.
-- DEV 5 : Implémentation de la logique de recherche avec un délai (Debounce).
+- DEV 1 : Initialisation du projet Vite et installation de react-router-dom.
+- DEV 2 : Création des composants Header et MovieCard (Props).
+- DEV 3 : Configuration d'Axios/Fetch et récupération des films "Trending".
+- DEV 4 : Recherche sur la persistance via LocalStorage.
+- DEV 5 : Création de la SearchBar (useState).
 
 APRÈS-MIDI (14h - 18h) :
-- DEV 1 : Structure de la page MovieDetailPage (Affichage du trailer et synopsis).
-- DEV 2 : Animation au survol des MovieCard et transitions fluides entre pages.
-- DEV 3 : Création d'un utilitaire pour gérer les images manquantes (fallback).
-- DEV 4 : Intégration du bouton ❤️ dans MovieCard connecté au Context.
-- DEV 5 : Ajout du bouton "Charger plus" en bas de la MovieGrid.
+- DEV 1 : Mise en place du Router (Routes pour Home et Favoris).
+- DEV 2 : Mise en page de la MovieGrid (CSS Grid/Flexbox).
+- DEV 3 : Liaison de la SearchBar avec l'API TMDB.
+- DEV 4 : Logique d'ajout aux favoris sur le bouton "❤️".
+- DEV 5 : Intégration des données réelles dans la MovieGrid.
 
 --------------------------------------------------------------------------------
 JOUR 2 : POLISSAGE FINAL ET LIVRAISON
 --------------------------------------------------------------------------------
 
 MATIN (09h - 13h) :
-- DEV 1 : Gestion des Error Boundaries (éviter que l'app crash en cas d'erreur).
-- DEV 2 : Vérification du responsive sur tous les formats d'écran.
-- DEV 3 : Mise en cache sessionStorage des résultats de recherche.
-- DEV 4 : Finalisation de la FavoritesPage (affichage et suppression).
-- DEV 5 : Mise à jour du README avec instructions d'installation et démo.
+- DEV 1 : Création de la page MovieDetail (Step 5).
+- DEV 2 : Peaufinage du design (Hover effects, Loading states).
+- DEV 3 : Gestion des erreurs API (si aucun film n'est trouvé).
+- DEV 4 : Page des Favoris (affichage des films stockés).
+- DEV 5 : Nettoyage du code et commentaires.
 
 APRÈS-MIDI (14h - 18h) :
 - TOUTE L'ÉQUIPE : Bug Bash (chasse aux bugs collective).

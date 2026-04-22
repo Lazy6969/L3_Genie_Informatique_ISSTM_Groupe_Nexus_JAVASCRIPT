@@ -1,66 +1,14 @@
-:root {
-  --primary: #e50914;
-  --dark: #141414;
-  --light: #ffffff;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--dark);
-  color: var(--light);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.header {
-  padding: 1rem 2rem;
-  background-color: rgba(0,0,0,0.8);
+.app {
+  min-height: 100vh;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  flex-direction: column;
 }
 
-.movie-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.movie-card {
-  background: #222;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s;
-}
-
-.movie-card:hover {
-  transform: scale(1.05);
-}
-
-.movie-card img {
+main {
+  flex: 1;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
   width: 100%;
-  aspect-ratio: 2/3;
-  object-fit: cover;
-}
-
-.movie-card h3 {
-  padding: 10px;
-  font-size: 1rem;
-  margin: 0;
-}
-
-.movie-card p {
-  padding: 0 10px 10px;
-  color: #ff9d00;
-}
-
-.search-bar {
-  padding: 8px 15px;
-  border-radius: 20px;
-  border: none;
-  width: 300px;
+  box-sizing: border-box;
 }

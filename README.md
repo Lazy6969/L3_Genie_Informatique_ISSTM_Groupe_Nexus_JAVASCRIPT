@@ -24,3 +24,4 @@ Une application web permettant de rechercher des films, de voir leurs détails e
 3. RAZAFINDRABARY Heather Doleen Jameelah (12ISST23-1303-FGCI/Ginfo)
 4. RANDRIANJATOVO Lucardo (12ISST23-1375-FGCI/Ginfo)
 5. RAHARILIVA Marie Julia (12ISST23-1286-FGCI/Ginfo)
+6. HANITRINIAINA Lorie Terrencya ( 12ISST23-1443FCGI/GInfo)

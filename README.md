@@ -25,3 +25,4 @@ Une application web permettant de rechercher des films, de voir leurs détails e
 4. RANDRIANJATOVO Lucardo (12ISST23-1375-FGCI/Ginfo)
 5. RAHARILIVA Marie Julia (12ISST23-1286-FGCI/Ginfo)
 6. HANITRINIAINA Lorie Terrencya ( 12ISST23-1443FCGI/GInfo)
+7. ISMAEL TOMMY JOHNATAN ( 12ISST23-1295FCGI/GInfo)
